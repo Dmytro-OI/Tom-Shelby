@@ -21,10 +21,5 @@ class Transcriptor:
                 for entry in transcript_data:
                     full_text += entry['text'] + " "
                 
-        return full_text
+        return full_text.strip()
     
-if __name__ == "__main__":
-    url = "https://www.youtube.com/watch?v=7iwgyzX-76g"  
-    transcriptor = Transcriptor(url)
-    transcript_text = transcriptor.transcript_text()
-    print(transcript_text)
