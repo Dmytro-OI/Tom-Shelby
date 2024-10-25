@@ -1,25 +1,22 @@
 from youtube_transcript_api import YouTubeTranscriptApi
 
-video_id = 'V2rj9RpucTc'
+class Transcriptor:
+    def __init__(self,video_id):
+        self.video_id = video_id
 
+    def transcript_text(self):
+        transcript_list = YouTubeTranscriptApi.list_transcripts(video_id)
 
-transcript_list = YouTubeTranscriptApi.list_transcripts(video_id)
+        all_filtered_text = []
+        for transcript in transcript_list:
+            print(
+                transcript.is_generated,
+            )
+        transcript_data = transcript.fetch()
 
-for transcript in transcript_list:
-    print(
-        # transcript.video_id,
-        # transcript.language,
-        # transcript.language_code,
-        transcript.is_generated,
-        # transcript.is_translatable,
-        # transcript.translation_languages,
-    )
-transcript_data = transcript.fetch()
-
-filtered_text = [
-        entry['text'] for entry in transcript_data 
-        if entry['text'].strip() not in ["[Music]"]
-    ]
-    
-for text in filtered_text:
-    print(text)
+        filtered_text = [
+                entry['text'] for entry in transcript_data 
+                if entry['text'].strip() not in ["[Music]"]
+            ]
+        all_filtered_text.extend(filtered_text)
+        return all_filtered_text
