@@ -14,8 +14,8 @@
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/username/project-name.git
-    cd project-name
+    git clone https://github.com/Dmytro-OI/Tom-Shelby
+    cd Tom-Shelby
     ```
 
 2. **Set up a virtual environment** (optional but recommended):
