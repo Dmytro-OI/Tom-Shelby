@@ -1,11 +1,14 @@
 from transcription import Transcriptor
+from summarizer import Summarizer
 
 
 
 def main():
-    t = Transcriptor("Lwnd0EonRiM")
+    t = Transcriptor("https://www.youtube.com/watch?v=OiUS2926nQM")
     text = t.transcript_text()
-    print(text)
+    s = Summarizer()
+    summary = s.get_summary(text, 100)
+    print(summary)
 
 
 
