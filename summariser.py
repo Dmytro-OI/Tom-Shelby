@@ -7,7 +7,7 @@ from transformers import pipeline
 class MaxLengthExpection(Exception):
     pass
 
-class Summarizer:
+class Summariser:
     def __init__(self, model:str="facebook/bart-large-cnn"):
         self.model = model
         self.summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
