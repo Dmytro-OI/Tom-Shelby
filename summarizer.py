@@ -1,5 +1,7 @@
+import math
 from typing import List
 from transformers import pipeline
+
 
 
 class MaxLengthExpection(Exception):
@@ -12,7 +14,7 @@ class Summarizer:
 
 
     def generate_chunks(self, data:str) -> List[str]:
-        chunk_size = max(int(len(data)/5), 1000)
+        chunk_size = max(math.ceil(len(data)/5), 1000)
         return [data[i:i+chunk_size] for i in range(0, len(data), chunk_size)]
 
 

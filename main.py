@@ -4,11 +4,13 @@ from summarizer import Summarizer
 
 
 def main():
-    t = Transcriptor("https://www.youtube.com/watch?v=OiUS2926nQM")
+    t = Transcriptor("https://www.youtube.com/watch?v=FFxf_IsYm4Y")
     text = t.transcript_text()
     s = Summarizer()
     summary = s.get_summary(text, 100)
-    print(summary)
+
+    with open("summary.txt") as f:
+        f.write(summary)
 
 
 
