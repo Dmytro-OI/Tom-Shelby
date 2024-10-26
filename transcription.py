@@ -5,7 +5,7 @@ class Transcriptor:
         self.video_id = video_id
 
     def transcript_text(self):
-        transcript_list = YouTubeTranscriptApi.list_transcripts(video_id)
+        transcript_list = YouTubeTranscriptApi.list_transcripts(self.video_id)
 
         all_filtered_text = []
         for transcript in transcript_list:
