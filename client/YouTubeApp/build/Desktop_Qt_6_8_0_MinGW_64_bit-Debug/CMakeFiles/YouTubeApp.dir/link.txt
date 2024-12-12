@@ -1,3 +1,0 @@
-F:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f CMakeFiles\YouTubeApp.dir/objects.a
-F:\Qt\Tools\mingw1310_64\bin\ar.exe qc CMakeFiles\YouTubeApp.dir/objects.a @CMakeFiles\YouTubeApp.dir\objects1.rsp
-F:\Qt\Tools\mingw1310_64\bin\g++.exe -DQT_QML_DEBUG -g -mwindows -Wl,--whole-archive CMakeFiles\YouTubeApp.dir/objects.a -Wl,--no-whole-archive -o YouTubeApp.exe -Wl,--out-implib,libYouTubeApp.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\YouTubeApp.dir\linkLibs.rsp

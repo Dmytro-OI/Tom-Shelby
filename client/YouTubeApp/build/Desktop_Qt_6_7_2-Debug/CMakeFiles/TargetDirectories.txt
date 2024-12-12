@@ -1,9 +1,0 @@
-/home/sviatkohuet/Documents/routine/dmytro/YouTubeApp/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/YouTubeApp.dir
-/home/sviatkohuet/Documents/routine/dmytro/YouTubeApp/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/edit_cache.dir
-/home/sviatkohuet/Documents/routine/dmytro/YouTubeApp/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/rebuild_cache.dir
-/home/sviatkohuet/Documents/routine/dmytro/YouTubeApp/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/list_install_components.dir
-/home/sviatkohuet/Documents/routine/dmytro/YouTubeApp/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/install.dir
-/home/sviatkohuet/Documents/routine/dmytro/YouTubeApp/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/install/local.dir
-/home/sviatkohuet/Documents/routine/dmytro/YouTubeApp/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/install/strip.dir
-/home/sviatkohuet/Documents/routine/dmytro/YouTubeApp/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/YouTubeApp_autogen_timestamp_deps.dir
-/home/sviatkohuet/Documents/routine/dmytro/YouTubeApp/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/YouTubeApp_autogen.dir
