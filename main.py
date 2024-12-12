@@ -15,10 +15,11 @@ app = FastAPI()
 
 @app.post("/")
 async def get_summary(body: SummaryBody):
-
+    print("here")
     t = Transcriptor(body.link)
     text = t.transcript_text()
+    print("here")
     s = Summariser()
-    summary = s.get_summary(text, 100)
+    summary = s.get_summary(text, body.max_length)
 
     return {"status": 200, "data": {"summary": summary}}
